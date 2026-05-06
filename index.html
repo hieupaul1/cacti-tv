@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; background:black; text-align:center;">
+  <img id="graph" src="https://cacti.iptp.net/cacti/graph_image.php?local_graph_id=11857" style="width:100%;">
+  
+  <script>
+    setInterval(function() {
+      document.getElementById("graph").src =
+        "https://cacti.iptp.net/cacti/graph_image.php?local_graph_id=11857&rand=" + new Date().getTime();
+    }, 300000);
+  </script>
+</body>
+</html>
