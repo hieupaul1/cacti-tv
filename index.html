@@ -3,13 +3,13 @@
 <body style="margin:0; background:black;">
   <img id="graph"
        referrerpolicy="no-referrer"
-       src="https://cacti.iptp.net/cacti/graph_image2.php?local_graph_id=11857"
+       src="https://cacti.iptp.net/cacti/graph_image2.php?local_graph_id=11857&rra_id=11"
        style="width:100vw; height:100vh; object-fit:contain;">
   
   <script>
     setInterval(function() {
       document.getElementById("graph").src =
-        "https://cacti.iptp.net/cacti/graph_image2.php?local_graph_id=11857&rand=" + new Date().getTime();
+        "https://cacti.iptp.net/cacti/graph_image2.php?local_graph_id=11857&rra_id=11&rand=" + new Date().getTime();
     }, 300000);
   </script>
 </body>
