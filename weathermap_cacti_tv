@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; background:black;">
+  <img id="graph"
+       referrerpolicy="no-referrer"
+       src="https://cacti.iptp.net/cacti/plugins/weathermap/weathermap-cacti-plugin.php?action=viewmap&id=189eec9a8b49c11c8bdf"
+       style="width:100vw; height:100vh; object-fit:contain;">
+  
+  <script>
+    setInterval(function() {
+      document.getElementById("graph").src =
+        "https://cacti.iptp.net/cacti/plugins/weathermap/weathermap-cacti-plugin.php?action=viewmap&id=189eec9a8b49c11c8bdf&rand=" + new Date().getTime();
+    }, 300000);
+  </script>
+</body>
+</html>
